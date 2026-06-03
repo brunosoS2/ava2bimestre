@@ -5,7 +5,7 @@ def calculo_imc(imc):
 
 #Mariana Godoy--
 def classificar(valor_imc):
-    if resultado => 25:
+    if valor_imc >= 25:
         return "Acima do peso"
     else:
         return "Normal "
@@ -15,3 +15,15 @@ def gerar_aviso(status):
         return "Excelente! Seu imc está na faixa ideal."
     else:
         return "Atenção! Seu imc indica que você está acima do peso ideal."
+
+    #gabriela cristina.s firmiano
+    #Entrada de dados-
+resultado = calculo_imc(peso,altura)
+status = classificar(resultado)
+aviso=gerar_viso(status)
+
+print(f"imc:{resultado:.2f}")
+print(f"cassificação:{status}")
+
+
+
